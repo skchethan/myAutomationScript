@@ -10,7 +10,7 @@ def calculation(a,b):
     elif final_user == final_machine:
         print("!!!!!!!!!!!!!!!! DRAW MATCH !!!!!!!!!!!!!!! TRY AGAIN !!!!!!!!!!!!!!")
     else:
-        print("I told you in the begining, you can't win against me \n""you can try oncce more also..........")
+        print("I told you in the begining, you can't win against me \n""you can try once more also..........")
     return None
 
 def score(a,b):
@@ -77,7 +77,7 @@ def develop(series):
     user = []
     machine =[]
     if series != 3 and series != 5:
-        exit 
+        print("ERROR....!!!!\n""you can choose either 3 or 5 only.....\n""Thankyou")
     elif series == 3 or 5:
         for i in range(series):
             user_action = int(input("enter the corresponding action to value :\n"" 1 = snake \n"" 2 = water \n"" 3 = gun\n"))
@@ -87,7 +87,7 @@ def develop(series):
             machine.append(machine_action)
             print(f"user input by till this time --->>> {user}\n"f"machine input by till this time --->>> {machine}")
     
-    score(user,machine)
+        score(user,machine)
 
     return None
 
@@ -100,7 +100,7 @@ if __name__ == "__main__":
 
     series = int(input("eneter the series you wish to play either 3 or 5 \n"))
     start = develop(series)
-exit 
+
 
 
 
